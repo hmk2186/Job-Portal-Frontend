@@ -1,1 +1,1 @@
-# Job-Portal-Frontend-with-Admin-panel
+# Job-Portal-Frontend
