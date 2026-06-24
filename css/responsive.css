@@ -1,0 +1,34 @@
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  .search-container {
+    margin-top: -1.5rem;
+    padding: 1rem;
+  }
+  .search-input-group .form-control, .search-input-group .form-select {
+    margin-bottom: 0.5rem;
+  }
+  .search-btn {
+    width: 100%;
+  }
+  .company-banner {
+    height: 120px;
+  }
+  .company-banner-logo {
+    width: 70px;
+    height: 70px;
+    bottom: -30px;
+    left: 20px;
+    font-size: 1.5rem;
+  }
+  .toast-container-custom {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+  .toast-custom {
+    min-width: calc(100vw - 24px);
+  }
+}

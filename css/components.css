@@ -1,0 +1,180 @@
+/* Utility classes */
+.font-heading {
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+.btn-pill {
+  border-radius: var(--btn-radius);
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.card-premium {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.card-premium:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+}
+/* Job Cards */
+.job-card {
+  padding: 1.5rem;
+}
+.company-logo-container {
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  background-color: #f3f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+[data-theme="dark"] .company-logo-container {
+  background-color: #2d2d2d;
+  color: #98a2b3;
+}
+.tag-badge {
+  background-color: var(--accent-bg);
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+.tag-badge:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* Bookmark Icon style */
+.btn-bookmark {
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.btn-bookmark:hover {
+  color: var(--primary-color);
+  transform: scale(1.15);
+}
+.btn-bookmark.bookmarked {
+  color: #ff9100;
+}
+/* Dark Mode Form Element Tweaks */
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .input-group-text {
+  background-color: #2b2b2b;
+  border-color: #3d3d3d;
+  color: #f5f5f5;
+}
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+  background-color: #333333;
+  border-color: var(--primary-color);
+  color: #ffffff;
+  box-shadow: 0 0 0 0.25rem rgba(10, 102, 194, 0.25);
+}
+[data-theme="dark"] .modal-content {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+/* Sidebar filter cards */
+.filter-section-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
+/* Spinner overlay styling */
+#spinner-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+[data-theme="dark"] #spinner-overlay {
+  background-color: rgba(18, 18, 18, 0.85);
+}
+.loader-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--accent-bg);
+  border-top: 5px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+/* Toast Container Styling */
+.toast-container-custom {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+}
+.toast-custom {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.5rem;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+  animation: slideUp 0.3s ease-out forwards;
+}
+.toast-custom.toast-success {
+  border-left-color: var(--secondary-color);
+}
+.toast-custom.toast-error {
+  border-left-color: #dc3545;
+}
+.toast-custom .toast-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+
+[data-theme="dark"] .page-link{
+    background: var(--card-bg);
+    color: white;
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .page-item.active .page-link{
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
