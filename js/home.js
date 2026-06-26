@@ -221,7 +221,7 @@ function renderHome() {
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="font-heading fw-bold mb-2 text-dark-theme-toggle">What Our Users Say</h2>
-          <p class="text-">Hear success stories from verified recruiters and successfully placed professionals.</p>
+          <p>Hear success stories from verified recruiters and successfully placed professionals.</p>
         </div>
         <div class="row g-4">
           <div class="col-md-4">
@@ -245,7 +245,7 @@ function renderHome() {
                 <i class="fa-solid fa-user-tie fs-2 text-primary bg-light p-2 rounded-circle border"></i>
                 <div>
                   <h6 class="font-heading fw-bold mb-0 text-dark-theme-toggle">Marcus Vance</h6>
-                  <span class="text- small">Full Stack Engineer</span>
+                  <span class="small">Full Stack Engineer</span>
                 </div>
               </div>
             </div>

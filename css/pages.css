@@ -65,12 +65,12 @@
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
 }
-.testimonial-avatar {
+/* .testimonial-avatar {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
-}
+} */
 
 /* Call to Action */
 .cta-section {
