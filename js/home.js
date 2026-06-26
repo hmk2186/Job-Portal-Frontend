@@ -69,7 +69,7 @@ function renderHome() {
           </div>
           <h5 class="font-heading fw-bold mb-1 text-dark-theme-toggle">${comp.name}</h5>
           <div class="text-warning mb-2 small">${comp.rating} <i class="fa-solid fa-star"></i></div>
-          <p class="text- small text-truncate-2 mb-3" style="height: 40px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">${comp.description}</p>
+          <p class="small text-truncate-2 mb-3" style="height: 40px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">${comp.description}</p>
           <a href="companies.html" class="btn btn-outline-primary btn-pill btn-sm">View Profile</a>
         </div>
       </div>
